@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.env
+
+legacy/
+.vscode/
+
+sample/api_outputs/progress.txt
+sample/api_outputs/warnings.txt
+
+*.epub
+temp_epub_txt/
+epub_extract_*/
