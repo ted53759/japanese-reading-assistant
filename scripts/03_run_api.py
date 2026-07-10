@@ -1,3 +1,4 @@
+import os
 import re
 import unicodedata
 from pathlib import Path
@@ -30,7 +31,7 @@ START_FILE = 1
 END_FILE = 9999
 
 # 使用模型
-MODEL = "gpt-5.4-mini"
+MODEL = os.getenv("OPENAI_MODEL", "gpt-5.4-mini")
 
 # 逐字拆解括號對齊位置
 ALIGN_TARGET_COL = 16

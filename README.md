@@ -56,7 +56,11 @@ japanese-reading-assistant/
 ├── README.md
 ├── requirements.txt
 ├── docs/
+│   ├── 01_workflow.md
+│   ├── 02_case_study.md
+│   └── 03_project_faq.md
 ├── prompts/
+│   └── word_breakdown_prompt.md
 ├── sample/
 └── scripts/
     ├── 00_extract_epub_text.py
@@ -92,6 +96,17 @@ python scripts/02_merge_chunks.py
 python scripts/03_run_api.py
 python scripts/04_merge_outputs.py
 ```
+
+執行 `scripts/03_run_api.py` 前，可以透過 `OPENAI_MODEL` 指定模型：
+
+PowerShell 範例：
+
+```powershell
+$env:OPENAI_MODEL="你的模型名稱"
+python scripts/03_run_api.py
+```
+
+如果未設定 `OPENAI_MODEL`，程式會使用作者開發時測試過的預設模型 `gpt-5.4-mini`。
 
 ## 技術重點
 
