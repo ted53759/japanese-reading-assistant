@@ -11,7 +11,7 @@ from openai import OpenAI
 # 專案根目錄：japanese-reading-assistant/
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# 由 scripts/merge_chunks.py 產生的合併檔
+# 由 scripts/02_merge_chunks.py 產生的合併檔
 MERGED_FILE = BASE_DIR / "sample" / "merged_chunks.txt"
 
 # API 輸出資料夾
@@ -19,9 +19,6 @@ OUTPUT_DIR = BASE_DIR / "sample" / "api_outputs"
 
 # 進度檔
 PROGRESS_FILE = OUTPUT_DIR / "progress.txt"
-
-# 最終合併輸出
-MASTER_OUTPUT = BASE_DIR / "sample" / "final_output.md"
 
 # 警告輸出
 WARNING_OUTPUT = OUTPUT_DIR / "warnings.txt"
@@ -789,15 +786,6 @@ def append_warnings(
 # 輸出與進度
 # =========================
 
-def append_to_master(file_no: int, number_range: str, result: str):
-    file_label = f"{file_no:03d}"
-
-    with open(MASTER_OUTPUT, "a", encoding="utf-8") as f:
-        f.write(f"\n\n===== FILE {file_label} | {number_range} =====\n\n")
-        f.write(result.strip())
-        f.write("\n")
-
-
 def save_progress(next_file_no: int):
     PROGRESS_FILE.write_text(str(next_file_no), encoding="utf-8")
 
@@ -834,7 +822,6 @@ def main():
     print(f"輸出資料夾：{OUTPUT_DIR}")
     print(f"模型：{MODEL}")
     print(f"處理範圍：FILE {START_FILE:03d} ～ FILE {END_FILE:03d}")
-    print(f"合併輸出：{MASTER_OUTPUT}")
     print(f"警告輸出：{WARNING_OUTPUT}")
     print(f"最大重試次數：{MAX_RETRIES}")
 
@@ -907,7 +894,6 @@ def main():
             break
 
         output_file.write_text(final_result, encoding="utf-8")
-        # append_to_master(file_no, number_range, final_result)
 
         if final_warnings:
             print(f"完成：{output_file.name}，但有 {len(final_warnings)} 個一般警告")
@@ -919,7 +905,7 @@ def main():
     print("\n處理結束。")
     print(f"單檔輸出資料夾：{OUTPUT_DIR}")
     print(f"警告輸出：{WARNING_OUTPUT}")
-    print("如需產生 final_output.md，請執行：python scripts/merge_outputs.py")
+    print("如需產生 final_output.md，請執行：python scripts/04_merge_outputs.py")
 
 
 if __name__ == "__main__":

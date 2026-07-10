@@ -97,9 +97,18 @@ python scripts/03_run_api.py
 python scripts/04_merge_outputs.py
 ```
 
-執行 `scripts/03_run_api.py` 前，可以透過 `OPENAI_MODEL` 指定模型：
+執行 `scripts/03_run_api.py` 前，需要先設定 `OPENAI_API_KEY`：
 
 PowerShell 範例：
+
+```powershell
+$env:OPENAI_API_KEY="你的 API key"
+python scripts/03_run_api.py
+```
+
+請不要把 API key 寫進程式碼或 commit 到 GitHub。
+
+也可以透過 `OPENAI_MODEL` 指定模型：
 
 ```powershell
 $env:OPENAI_MODEL="你的模型名稱"
