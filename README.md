@@ -106,7 +106,7 @@ $env:OPENAI_API_KEY="你的 API key"
 python scripts/03_run_api.py
 ```
 
-請不要把 API key 寫進程式碼或 commit 到 GitHub。
+執行前，請在本機終端機透過環境變數設定自己的 OpenAI API Key。請勿將實際金鑰直接貼入 `.py`、README 或其他會提交至 GitHub 的檔案。
 
 也可以透過 `OPENAI_MODEL` 指定模型：
 
