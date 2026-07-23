@@ -11,3 +11,6 @@ sample/api_outputs/warnings.txt
 *.epub
 temp_epub_txt/
 epub_extract_*/
+
+# Frontend package-manager cache
+.pnpm-store/
