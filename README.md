@@ -3,21 +3,6 @@
 Japanese Reading Assistant 是一個以「用小說學日文」為核心的長文本閱讀輔助工具。  
 它將日文小說或文章轉換成逐字拆解格式，減少學習者反覆查單字的成本，讓初級到中級學習者也能透過有趣的原文材料持續學習。
 
-## Web Dashboard
-
-專案另外提供一個獨立的 Vue 3 + Vite 作品集介面，用來展示 AI 長文本任務、逐句學習內容與品質檢核結果。
-
-[開啟 Japanese Reading Assistant Dashboard](https://ted53759.github.io/japanese-reading-assistant/)
-
-- 任務成功、警告、失敗與待複查統計
-- 任務狀態、問題類型與關鍵字篩選
-- 日文原句、假名、單字拆解與繁體中文翻譯
-- 句子遺漏、編號重複與格式錯誤等品質檢核
-- 初學者／進階者模式與響應式版面
-- 完全使用 `web/src/data/tasks.json` 模擬資料，不會呼叫 API
-
-前端完整放在 `web/`，擁有自己的套件與部署流程；既有 Python pipeline、`requirements.txt` 和 `sample/` 不需要任何改動。
-
 ## 教材閱讀方式
 
 初學者可以先閱讀逐字拆解與中文翻譯；進階學習者則可以先挑戰日文原文，再針對不熟悉的詞語查看拆解與翻譯。
@@ -83,7 +68,6 @@ japanese-reading-assistant/
 ├── prompts/
 │   └── word_breakdown_prompt.md
 ├── sample/
-├── web/                         # Vue 3 + Vite 作品集 Dashboard
 └── scripts/
     ├── 00_extract_epub_text.py
     ├── 01_split_paragraphs.py
