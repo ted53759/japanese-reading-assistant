@@ -1,0 +1,2128 @@
+{
+  "meta": {
+    "datasetName": "Japanese Reading Assistant Portfolio Demo",
+    "generatedAt": "2026-07-20T14:30:00+08:00",
+    "isMock": true,
+    "pipelineVersion": "demo-v1",
+    "statusPriority": [
+      "failed",
+      "review",
+      "warning",
+      "success"
+    ]
+  },
+  "tasks": [
+    {
+      "id": "task-001",
+      "fileNumber": 1,
+      "title": "清晨的教室",
+      "sentenceRange": {
+        "start": 1,
+        "end": 2
+      },
+      "outputFile": "001_1-2_翻譯.txt",
+      "status": "success",
+      "attempts": 1,
+      "processingTimeMs": 4280,
+      "processedAt": "2026-07-20T13:42:00+08:00",
+      "sentences": [
+        {
+          "id": "sentence-001",
+          "number": 1,
+          "original": "朝の教室には、まだ誰もいなかった。",
+          "translation": "早晨的教室裡，還沒有人。",
+          "tokens": [
+            {
+              "surface": "朝",
+              "reading": "あさ",
+              "meaning": "早晨",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "一天開始的時間。",
+              "grammarTags": [
+                "時間詞"
+              ]
+            },
+            {
+              "surface": "の",
+              "reading": "の",
+              "meaning": "的",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "連接前後兩個名詞。",
+              "grammarTags": [
+                "格助詞"
+              ]
+            },
+            {
+              "surface": "教室",
+              "reading": "きょうしつ",
+              "meaning": "教室",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "上課使用的房間。",
+              "grammarTags": []
+            },
+            {
+              "surface": "に",
+              "reading": "に",
+              "meaning": "在",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "標示人或事物存在的場所。",
+              "grammarTags": [
+                "存在場所"
+              ]
+            },
+            {
+              "surface": "は",
+              "reading": "は",
+              "meaning": "主題標記",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "提示這句話談論的範圍。",
+              "grammarTags": [
+                "主題助詞"
+              ]
+            },
+            {
+              "surface": "まだ",
+              "reading": "まだ",
+              "meaning": "還；尚未",
+              "partOfSpeech": "副詞",
+              "beginnerNote": "搭配否定形表示「還沒有」。",
+              "grammarTags": [
+                "まだ～ない"
+              ]
+            },
+            {
+              "surface": "誰も",
+              "reading": "だれも",
+              "meaning": "沒有人",
+              "partOfSpeech": "代名詞",
+              "beginnerNote": "搭配否定形時表示「誰都不」。",
+              "grammarTags": [
+                "疑問詞＋も"
+              ]
+            },
+            {
+              "surface": "いなかった",
+              "reading": "いなかった",
+              "meaning": "不在；不存在",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "「いる」的過去否定形，用於有生命的人或動物。",
+              "grammarTags": [
+                "過去否定"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sentence-002",
+          "number": 2,
+          "original": "窓際の席だけが、白い光を受けていた。",
+          "translation": "只有窗邊的座位沐浴在白色的光線裡。",
+          "tokens": [
+            {
+              "surface": "窓際",
+              "reading": "まどぎわ",
+              "meaning": "窗邊",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "靠近窗戶的位置。",
+              "grammarTags": []
+            },
+            {
+              "surface": "の",
+              "reading": "の",
+              "meaning": "的",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "連接位置與座位。",
+              "grammarTags": [
+                "格助詞"
+              ]
+            },
+            {
+              "surface": "席",
+              "reading": "せき",
+              "meaning": "座位",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "供人坐下的位置。",
+              "grammarTags": []
+            },
+            {
+              "surface": "だけ",
+              "reading": "だけ",
+              "meaning": "只有",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "限定前面的事物。",
+              "grammarTags": [
+                "限定"
+              ]
+            },
+            {
+              "surface": "が",
+              "reading": "が",
+              "meaning": "主語標記",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "標示動作或狀態的主體。",
+              "grammarTags": [
+                "主格助詞"
+              ]
+            },
+            {
+              "surface": "白い",
+              "reading": "しろい",
+              "meaning": "白色的",
+              "partOfSpeech": "い形容詞",
+              "beginnerNote": "直接修飾後面的名詞。",
+              "grammarTags": []
+            },
+            {
+              "surface": "光",
+              "reading": "ひかり",
+              "meaning": "光",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "照亮物體的光線。",
+              "grammarTags": []
+            },
+            {
+              "surface": "を",
+              "reading": "を",
+              "meaning": "受詞標記",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "標示承受動作的對象。",
+              "grammarTags": [
+                "受格助詞"
+              ]
+            },
+            {
+              "surface": "受けていた",
+              "reading": "うけていた",
+              "meaning": "正承受著",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "「受ける」的持續狀態過去式。",
+              "grammarTags": [
+                "ていた"
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "id": "task-001-number-sequence",
+          "ruleId": "number.sequence",
+          "category": "numbering",
+          "scope": "task",
+          "outcome": "pass",
+          "sentenceId": null,
+          "sentenceNumber": null,
+          "line": null,
+          "title": "句子編號完整",
+          "message": "預期與實際編號皆為 1–2。",
+          "evidence": null,
+          "retryable": true
+        },
+        {
+          "id": "task-001-content-complete",
+          "ruleId": "content.complete",
+          "category": "completeness",
+          "scope": "task",
+          "outcome": "pass",
+          "sentenceId": null,
+          "sentenceNumber": null,
+          "line": null,
+          "title": "學習內容完整",
+          "message": "兩句皆包含原句、逐詞拆解與中文翻譯。",
+          "evidence": null,
+          "retryable": true
+        },
+        {
+          "id": "task-001-token-format",
+          "ruleId": "format.token-line",
+          "category": "format",
+          "scope": "task",
+          "outcome": "pass",
+          "sentenceId": null,
+          "sentenceNumber": null,
+          "line": null,
+          "title": "單字格式正確",
+          "message": "所有單字皆含假名與繁體中文解釋。",
+          "evidence": null,
+          "retryable": true
+        }
+      ]
+    },
+    {
+      "id": "task-002",
+      "fileNumber": 2,
+      "title": "雨後的校園",
+      "sentenceRange": {
+        "start": 3,
+        "end": 4
+      },
+      "outputFile": "002_3-4_翻譯.txt",
+      "status": "success",
+      "attempts": 1,
+      "processingTimeMs": 4760,
+      "processedAt": "2026-07-20T13:49:00+08:00",
+      "sentences": [
+        {
+          "id": "sentence-003",
+          "number": 3,
+          "original": "彼女は鞄を机の横に置いて、小さく息を吐いた。",
+          "translation": "她把包包放在桌子旁邊，輕輕地吐了一口氣。",
+          "tokens": [
+            {
+              "surface": "彼女",
+              "reading": "かのじょ",
+              "meaning": "她",
+              "partOfSpeech": "代名詞",
+              "beginnerNote": "指女性的第三人稱。",
+              "grammarTags": []
+            },
+            {
+              "surface": "は",
+              "reading": "は",
+              "meaning": "主題標記",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "提示句子的主題。",
+              "grammarTags": [
+                "主題助詞"
+              ]
+            },
+            {
+              "surface": "鞄",
+              "reading": "かばん",
+              "meaning": "包包",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "裝物品用的提袋或書包。",
+              "grammarTags": []
+            },
+            {
+              "surface": "を",
+              "reading": "を",
+              "meaning": "受詞標記",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "標示被放置的物品。",
+              "grammarTags": [
+                "受格助詞"
+              ]
+            },
+            {
+              "surface": "机",
+              "reading": "つくえ",
+              "meaning": "桌子",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "讀書或工作的桌面家具。",
+              "grammarTags": []
+            },
+            {
+              "surface": "の",
+              "reading": "の",
+              "meaning": "的",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "連接桌子與旁邊的位置。",
+              "grammarTags": [
+                "格助詞"
+              ]
+            },
+            {
+              "surface": "横",
+              "reading": "よこ",
+              "meaning": "旁邊",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "物體左右兩側的位置。",
+              "grammarTags": [
+                "位置詞"
+              ]
+            },
+            {
+              "surface": "に",
+              "reading": "に",
+              "meaning": "到；在",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "標示放置的目的地。",
+              "grammarTags": [
+                "到達點"
+              ]
+            },
+            {
+              "surface": "置いて",
+              "reading": "おいて",
+              "meaning": "放下並",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "「置く」的て形，連接下一個動作。",
+              "grammarTags": [
+                "て形"
+              ]
+            },
+            {
+              "surface": "小さく",
+              "reading": "ちいさく",
+              "meaning": "輕輕地",
+              "partOfSpeech": "副詞",
+              "beginnerNote": "「小さい」的副詞形。",
+              "grammarTags": [
+                "形容詞副詞化"
+              ]
+            },
+            {
+              "surface": "息",
+              "reading": "いき",
+              "meaning": "氣息",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "呼吸時進出的氣。",
+              "grammarTags": []
+            },
+            {
+              "surface": "を",
+              "reading": "を",
+              "meaning": "受詞標記",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "標示吐出的對象。",
+              "grammarTags": [
+                "受格助詞"
+              ]
+            },
+            {
+              "surface": "吐いた",
+              "reading": "はいた",
+              "meaning": "吐出；呼出",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "「吐く」的過去式。",
+              "grammarTags": [
+                "過去形"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sentence-004",
+          "number": 4,
+          "original": "昨日の雨で、校庭には浅い水たまりが残っていた。",
+          "translation": "因為昨天的雨，操場上還殘留著淺淺的積水。",
+          "tokens": [
+            {
+              "surface": "昨日",
+              "reading": "きのう",
+              "meaning": "昨天",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "今天的前一天。",
+              "grammarTags": [
+                "時間詞"
+              ]
+            },
+            {
+              "surface": "の",
+              "reading": "の",
+              "meaning": "的",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "連接昨天與雨。",
+              "grammarTags": [
+                "格助詞"
+              ]
+            },
+            {
+              "surface": "雨",
+              "reading": "あめ",
+              "meaning": "雨",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "從天空落下的雨水。",
+              "grammarTags": []
+            },
+            {
+              "surface": "で",
+              "reading": "で",
+              "meaning": "因為；由於",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "此處表示造成結果的原因。",
+              "grammarTags": [
+                "原因"
+              ]
+            },
+            {
+              "surface": "校庭",
+              "reading": "こうてい",
+              "meaning": "校園操場",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "學校建築外的活動場地。",
+              "grammarTags": []
+            },
+            {
+              "surface": "に",
+              "reading": "に",
+              "meaning": "在",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "標示積水存在的地方。",
+              "grammarTags": [
+                "存在場所"
+              ]
+            },
+            {
+              "surface": "は",
+              "reading": "は",
+              "meaning": "主題標記",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "凸顯操場這個範圍。",
+              "grammarTags": [
+                "主題助詞"
+              ]
+            },
+            {
+              "surface": "浅い",
+              "reading": "あさい",
+              "meaning": "淺的",
+              "partOfSpeech": "い形容詞",
+              "beginnerNote": "形容深度不深。",
+              "grammarTags": []
+            },
+            {
+              "surface": "水たまり",
+              "reading": "みずたまり",
+              "meaning": "水窪；積水",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "地面凹處聚集的水。",
+              "grammarTags": []
+            },
+            {
+              "surface": "が",
+              "reading": "が",
+              "meaning": "主語標記",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "標示殘留著的事物。",
+              "grammarTags": [
+                "主格助詞"
+              ]
+            },
+            {
+              "surface": "残っていた",
+              "reading": "のこっていた",
+              "meaning": "還殘留著",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "表示過去某時仍維持殘留狀態。",
+              "grammarTags": [
+                "ていた"
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "id": "task-002-number-sequence",
+          "ruleId": "number.sequence",
+          "category": "numbering",
+          "scope": "task",
+          "outcome": "pass",
+          "sentenceId": null,
+          "sentenceNumber": null,
+          "line": null,
+          "title": "句子編號完整",
+          "message": "預期與實際編號皆為 3–4。",
+          "evidence": null,
+          "retryable": true
+        },
+        {
+          "id": "task-002-content-complete",
+          "ruleId": "content.complete",
+          "category": "completeness",
+          "scope": "task",
+          "outcome": "pass",
+          "sentenceId": null,
+          "sentenceNumber": null,
+          "line": null,
+          "title": "內容欄位完整",
+          "message": "原句、逐詞拆解與中文翻譯均已產生。",
+          "evidence": null,
+          "retryable": true
+        },
+        {
+          "id": "task-002-language-check",
+          "ruleId": "language.forbidden-script",
+          "category": "language",
+          "scope": "task",
+          "outcome": "pass",
+          "sentenceId": null,
+          "sentenceNumber": null,
+          "line": null,
+          "title": "未混入異常文字",
+          "message": "中文解釋未偵測到禁止的外語字元。",
+          "evidence": null,
+          "retryable": true
+        }
+      ]
+    },
+    {
+      "id": "task-003",
+      "fileNumber": 3,
+      "title": "走廊的腳步聲",
+      "sentenceRange": {
+        "start": 5,
+        "end": 6
+      },
+      "outputFile": "003_5-6_翻譯.txt",
+      "status": "warning",
+      "attempts": 2,
+      "processingTimeMs": 5930,
+      "processedAt": "2026-07-20T13:58:00+08:00",
+      "sentences": [
+        {
+          "id": "sentence-005",
+          "number": 5,
+          "original": "廊下の向こうから、誰かの足音が近づいてきた。",
+          "translation": "從走廊那頭，有某人的腳步聲靠近過來了。",
+          "tokens": [
+            {
+              "surface": "廊下",
+              "reading": "ろうか",
+              "meaning": "走廊",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "連接房間的通道。",
+              "grammarTags": []
+            },
+            {
+              "surface": "の",
+              "reading": "の",
+              "meaning": "的",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "連接走廊與方向。",
+              "grammarTags": [
+                "格助詞"
+              ]
+            },
+            {
+              "surface": "向こう",
+              "reading": "むこう",
+              "meaning": "那邊；對面",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "距離說話者較遠的位置。",
+              "grammarTags": [
+                "位置詞"
+              ]
+            },
+            {
+              "surface": "から",
+              "reading": "から",
+              "meaning": "從",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "標示聲音傳來的起點。",
+              "grammarTags": [
+                "起點"
+              ]
+            },
+            {
+              "surface": "誰か",
+              "reading": "だれか",
+              "meaning": "某人",
+              "partOfSpeech": "代名詞",
+              "beginnerNote": "表示不確定是哪一個人。",
+              "grammarTags": [
+                "疑問詞＋か"
+              ]
+            },
+            {
+              "surface": "の",
+              "reading": "の",
+              "meaning": "的",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "表示腳步聲屬於某人。",
+              "grammarTags": [
+                "所有"
+              ]
+            },
+            {
+              "surface": "足音",
+              "reading": "あしおと",
+              "meaning": "腳步聲",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "走路時發出的聲音。",
+              "grammarTags": []
+            },
+            {
+              "surface": "が",
+              "reading": "が",
+              "meaning": "主語標記",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "標示正在靠近的聲音。",
+              "grammarTags": [
+                "主格助詞"
+              ]
+            },
+            {
+              "surface": "近づいてきた",
+              "reading": "ちかづいてきた",
+              "meaning": "逐漸靠近過來",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "「～てくる」帶有朝說話者方向變化的語感。",
+              "grammarTags": [
+                "てくる",
+                "過去形"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sentence-006",
+          "number": 6,
+          "original": "「早いね。」",
+          "translation": "好早啊。",
+          "tokens": [
+            {
+              "surface": "早い",
+              "reading": "はやい",
+              "meaning": "早的；好早",
+              "partOfSpeech": "い形容詞",
+              "beginnerNote": "此處指到達的時間很早。",
+              "grammarTags": []
+            },
+            {
+              "surface": "ね",
+              "reading": "ね",
+              "meaning": "啊；呢",
+              "partOfSpeech": "終助詞",
+              "beginnerNote": "向對方尋求共鳴或確認。",
+              "grammarTags": [
+                "語氣"
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "id": "task-003-number-sequence",
+          "ruleId": "number.sequence",
+          "category": "numbering",
+          "scope": "task",
+          "outcome": "pass",
+          "sentenceId": null,
+          "sentenceNumber": null,
+          "line": null,
+          "title": "句子編號完整",
+          "message": "預期與實際編號皆為 5–6。",
+          "evidence": null,
+          "retryable": true
+        },
+        {
+          "id": "task-003-parentheses",
+          "ruleId": "format.parentheses",
+          "category": "format",
+          "scope": "sentence",
+          "outcome": "warning",
+          "sentenceId": "sentence-005",
+          "sentenceNumber": 5,
+          "line": 18,
+          "title": "括號格式已自動修正",
+          "message": "原始輸出缺少斜線與中文欄位，後處理已補成標準格式。",
+          "evidence": "足音（あしおと）",
+          "retryable": true
+        },
+        {
+          "id": "task-003-content-complete",
+          "ruleId": "content.complete",
+          "category": "completeness",
+          "scope": "task",
+          "outcome": "pass",
+          "sentenceId": null,
+          "sentenceNumber": null,
+          "line": null,
+          "title": "修正後內容完整",
+          "message": "兩句皆保有原句、拆解與翻譯。",
+          "evidence": null,
+          "retryable": true
+        }
+      ]
+    },
+    {
+      "id": "task-004",
+      "fileNumber": 4,
+      "title": "睡眼惺忪的同學",
+      "sentenceRange": {
+        "start": 7,
+        "end": 8
+      },
+      "outputFile": "004_7-8_翻譯.txt",
+      "status": "warning",
+      "attempts": 2,
+      "processingTimeMs": 6120,
+      "processedAt": "2026-07-20T14:05:00+08:00",
+      "sentences": [
+        {
+          "id": "sentence-007",
+          "number": 7,
+          "original": "振り向くと、彼が眠そうな顔で立っていた。",
+          "translation": "一回頭，就看見他帶著一副很想睡的表情站著。",
+          "tokens": [
+            {
+              "surface": "振り向く",
+              "reading": "ふりむく",
+              "meaning": "回頭",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "把頭或身體轉向後方。",
+              "grammarTags": [
+                "辭書形"
+              ]
+            },
+            {
+              "surface": "と",
+              "reading": "と",
+              "meaning": "一……就……",
+              "partOfSpeech": "接續助詞",
+              "beginnerNote": "表示前項發生後，自然出現後項。",
+              "grammarTags": [
+                "條件"
+              ]
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "他",
+              "partOfSpeech": "代名詞",
+              "beginnerNote": "男性的第三人稱。",
+              "grammarTags": []
+            },
+            {
+              "surface": "が",
+              "reading": "が",
+              "meaning": "主語標記",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "標示站著的人。",
+              "grammarTags": [
+                "主格助詞"
+              ]
+            },
+            {
+              "surface": "眠そうな",
+              "reading": "ねむそうな",
+              "meaning": "看起來很想睡的",
+              "partOfSpeech": "な形容詞",
+              "beginnerNote": "「～そう」表示從外觀看來的樣子。",
+              "grammarTags": [
+                "樣態そう"
+              ]
+            },
+            {
+              "surface": "顔",
+              "reading": "かお",
+              "meaning": "臉；表情",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "此處偏向臉上的神情。",
+              "grammarTags": []
+            },
+            {
+              "surface": "で",
+              "reading": "で",
+              "meaning": "帶著；以",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "標示呈現動作時的狀態。",
+              "grammarTags": [
+                "狀態"
+              ]
+            },
+            {
+              "surface": "立っていた",
+              "reading": "たっていた",
+              "meaning": "站著",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "表示過去某時持續站立的狀態。",
+              "grammarTags": [
+                "ていた"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sentence-008",
+          "number": 8,
+          "original": "「そっちこそ。」",
+          "translation": "你才是。",
+          "tokens": [
+            {
+              "surface": "そっち",
+              "reading": "そっち",
+              "meaning": "你那邊；你",
+              "partOfSpeech": "代名詞",
+              "beginnerNote": "口語中可用來指對方。",
+              "grammarTags": [
+                "口語"
+              ]
+            },
+            {
+              "surface": "こそ",
+              "reading": "こそ",
+              "meaning": "才是；正是",
+              "partOfSpeech": "係助詞",
+              "beginnerNote": "強調前面的對象。",
+              "grammarTags": [
+                "強調"
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "id": "task-004-number-sequence",
+          "ruleId": "number.sequence",
+          "category": "numbering",
+          "scope": "task",
+          "outcome": "pass",
+          "sentenceId": null,
+          "sentenceNumber": null,
+          "line": null,
+          "title": "句子編號完整",
+          "message": "預期與實際編號皆為 7–8。",
+          "evidence": null,
+          "retryable": true
+        },
+        {
+          "id": "task-004-broken-masu",
+          "ruleId": "tokenization.broken-masu",
+          "category": "tokenization",
+          "scope": "sentence",
+          "outcome": "warning",
+          "sentenceId": "sentence-007",
+          "sentenceNumber": 7,
+          "line": 22,
+          "title": "動詞切分曾出現異常",
+          "message": "初次輸出將「立っていた」切得過細，後處理已合併但建議保留警告紀錄。",
+          "evidence": "立ってい（たってい / 站著）＋た（た / 過去）",
+          "retryable": false
+        },
+        {
+          "id": "task-004-content-complete",
+          "ruleId": "content.complete",
+          "category": "completeness",
+          "scope": "task",
+          "outcome": "pass",
+          "sentenceId": null,
+          "sentenceNumber": null,
+          "line": null,
+          "title": "內容欄位完整",
+          "message": "兩句皆包含可閱讀的原句、拆解與翻譯。",
+          "evidence": null,
+          "retryable": true
+        }
+      ]
+    },
+    {
+      "id": "task-005",
+      "fileNumber": 5,
+      "title": "微笑與教室時鐘",
+      "sentenceRange": {
+        "start": 9,
+        "end": 11
+      },
+      "outputFile": "005_9-11_翻譯_有問題.txt",
+      "status": "failed",
+      "attempts": 3,
+      "processingTimeMs": 12840,
+      "processedAt": "2026-07-20T14:12:00+08:00",
+      "sentences": [
+        {
+          "id": "sentence-009",
+          "number": 9,
+          "original": "彼女はそう言って、少しだけ笑った。",
+          "translation": "她這麼說著，微微笑了。",
+          "tokens": [
+            {
+              "surface": "彼女",
+              "reading": "かのじょ",
+              "meaning": "她",
+              "partOfSpeech": "代名詞",
+              "beginnerNote": "指女性的第三人稱。",
+              "grammarTags": []
+            },
+            {
+              "surface": "は",
+              "reading": "は",
+              "meaning": "主題標記",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "提示這句話談論的人。",
+              "grammarTags": [
+                "主題助詞"
+              ]
+            },
+            {
+              "surface": "そう",
+              "reading": "そう",
+              "meaning": "那樣；如此",
+              "partOfSpeech": "副詞",
+              "beginnerNote": "指前面剛說過的內容。",
+              "grammarTags": [
+                "指示語"
+              ]
+            },
+            {
+              "surface": "言って",
+              "reading": "いって",
+              "meaning": "說著；說了之後",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "「言う」的て形，連接下一個動作。",
+              "grammarTags": [
+                "て形"
+              ]
+            },
+            {
+              "surface": "少し",
+              "reading": "すこし",
+              "meaning": "一點點",
+              "partOfSpeech": "副詞",
+              "beginnerNote": "表示程度或數量不多。",
+              "grammarTags": []
+            },
+            {
+              "surface": "だけ",
+              "reading": "だけ",
+              "meaning": "僅僅",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "限定笑容的程度。",
+              "grammarTags": [
+                "限定"
+              ]
+            },
+            {
+              "surface": "笑った",
+              "reading": "わらった",
+              "meaning": "笑了",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "「笑う」的過去式。",
+              "grammarTags": [
+                "過去形"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sentence-011",
+          "number": 11,
+          "original": "教室の時計は、七時四十分を指していた。",
+          "translation": "教室的時鐘指著七點四十分。",
+          "tokens": [
+            {
+              "surface": "教室",
+              "reading": "きょうしつ",
+              "meaning": "教室",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "上課使用的房間。",
+              "grammarTags": []
+            },
+            {
+              "surface": "の",
+              "reading": "の",
+              "meaning": "的",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "表示時鐘位於教室。",
+              "grammarTags": [
+                "所屬"
+              ]
+            },
+            {
+              "surface": "時計",
+              "reading": "とけい",
+              "meaning": "時鐘",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "顯示時間的器具。",
+              "grammarTags": []
+            },
+            {
+              "surface": "は",
+              "reading": "は",
+              "meaning": "主題標記",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "提示時鐘是句子的主題。",
+              "grammarTags": [
+                "主題助詞"
+              ]
+            },
+            {
+              "surface": "七時四十分",
+              "reading": "しちじよんじゅっぷん",
+              "meaning": "七點四十分",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "表示具體時間。",
+              "grammarTags": [
+                "時間詞"
+              ]
+            },
+            {
+              "surface": "を",
+              "reading": "を",
+              "meaning": "受詞標記",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "標示時鐘指示的時間。",
+              "grammarTags": [
+                "受格助詞"
+              ]
+            },
+            {
+              "surface": "指していた",
+              "reading": "さしていた",
+              "meaning": "正指著；顯示著",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "表示時鐘在當時所顯示的狀態。",
+              "grammarTags": [
+                "ていた"
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "id": "task-005-missing-number",
+          "ruleId": "number.missing",
+          "category": "numbering",
+          "scope": "task",
+          "outcome": "error",
+          "sentenceId": null,
+          "sentenceNumber": 10,
+          "line": null,
+          "title": "句子編號遺漏",
+          "message": "預期範圍為 9–11，但輸出中缺少【10】。",
+          "evidence": "實際編號：9、11",
+          "retryable": true
+        },
+        {
+          "id": "task-005-format-valid",
+          "ruleId": "format.token-line",
+          "category": "format",
+          "scope": "task",
+          "outcome": "pass",
+          "sentenceId": null,
+          "sentenceNumber": null,
+          "line": null,
+          "title": "現有句子的單字格式正確",
+          "message": "已輸出的兩句均符合單詞、假名與中文欄位格式。",
+          "evidence": null,
+          "retryable": true
+        },
+        {
+          "id": "task-005-retry-exhausted",
+          "ruleId": "pipeline.retry-exhausted",
+          "category": "completeness",
+          "scope": "task",
+          "outcome": "error",
+          "sentenceId": null,
+          "sentenceNumber": 10,
+          "line": null,
+          "title": "重試後仍未補齊",
+          "message": "已達三次重試上限，任務停止以避免錯誤內容進入合併檔。",
+          "evidence": "3 / 3 次",
+          "retryable": false
+        }
+      ]
+    },
+    {
+      "id": "task-006",
+      "fileNumber": 6,
+      "title": "文化祭的準備",
+      "sentenceRange": {
+        "start": 12,
+        "end": 14
+      },
+      "outputFile": "006_12-14_翻譯_有問題.txt",
+      "status": "failed",
+      "attempts": 3,
+      "processingTimeMs": 13720,
+      "processedAt": "2026-07-20T14:19:00+08:00",
+      "sentences": [
+        {
+          "id": "sentence-012",
+          "number": 12,
+          "original": "いつもなら、二人ともこの時間にはまだ家にいる。",
+          "translation": "若是平常，兩個人這個時間還都在家裡。",
+          "tokens": [
+            {
+              "surface": "いつもなら",
+              "reading": "いつもなら",
+              "meaning": "若是平常",
+              "partOfSpeech": "副詞",
+              "beginnerNote": "表示以平時的情況作為條件。",
+              "grammarTags": [
+                "なら"
+              ]
+            },
+            {
+              "surface": "二人",
+              "reading": "ふたり",
+              "meaning": "兩個人",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "「二人」有固定讀法「ふたり」。",
+              "grammarTags": [
+                "人數"
+              ]
+            },
+            {
+              "surface": "とも",
+              "reading": "とも",
+              "meaning": "都",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "接在數量後表示全部。",
+              "grammarTags": [
+                "全部"
+              ]
+            },
+            {
+              "surface": "この",
+              "reading": "この",
+              "meaning": "這個",
+              "partOfSpeech": "連體詞",
+              "beginnerNote": "直接修飾後面的名詞。",
+              "grammarTags": [
+                "指示詞"
+              ]
+            },
+            {
+              "surface": "時間",
+              "reading": "じかん",
+              "meaning": "時間",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "此處指一天中的這個時刻。",
+              "grammarTags": []
+            },
+            {
+              "surface": "に",
+              "reading": "に",
+              "meaning": "在",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "標示動作或狀態發生的時間。",
+              "grammarTags": [
+                "時間點"
+              ]
+            },
+            {
+              "surface": "は",
+              "reading": "は",
+              "meaning": "主題標記",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "凸顯這個時間點。",
+              "grammarTags": [
+                "主題助詞"
+              ]
+            },
+            {
+              "surface": "まだ",
+              "reading": "まだ",
+              "meaning": "還",
+              "partOfSpeech": "副詞",
+              "beginnerNote": "表示狀態持續到此刻。",
+              "grammarTags": []
+            },
+            {
+              "surface": "家",
+              "reading": "いえ",
+              "meaning": "家",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "居住的地方。",
+              "grammarTags": []
+            },
+            {
+              "surface": "に",
+              "reading": "に",
+              "meaning": "在",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "標示人所在的場所。",
+              "grammarTags": [
+                "存在場所"
+              ]
+            },
+            {
+              "surface": "いる",
+              "reading": "いる",
+              "meaning": "在；待著",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "用於有生命的人或動物存在。",
+              "grammarTags": [
+                "存在動詞"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sentence-013-a",
+          "number": 13,
+          "original": "けれど今日は、文化祭の準備で早く集まることになっていた。",
+          "translation": "可是今天，因為文化祭的準備，已經決定要提早集合了。",
+          "tokens": [
+            {
+              "surface": "けれど",
+              "reading": "けれど",
+              "meaning": "可是；然而",
+              "partOfSpeech": "接續詞",
+              "beginnerNote": "表示與前一句形成轉折。",
+              "grammarTags": [
+                "轉折"
+              ]
+            },
+            {
+              "surface": "今日",
+              "reading": "きょう",
+              "meaning": "今天",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "說話當下的這一天。",
+              "grammarTags": [
+                "時間詞"
+              ]
+            },
+            {
+              "surface": "は",
+              "reading": "は",
+              "meaning": "主題標記",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "將今天與平常對比。",
+              "grammarTags": [
+                "對比"
+              ]
+            },
+            {
+              "surface": "文化祭",
+              "reading": "ぶんかさい",
+              "meaning": "文化祭",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "日本學校常見的學生展演活動。",
+              "grammarTags": []
+            },
+            {
+              "surface": "の",
+              "reading": "の",
+              "meaning": "的",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "連接文化祭與準備。",
+              "grammarTags": [
+                "格助詞"
+              ]
+            },
+            {
+              "surface": "準備",
+              "reading": "じゅんび",
+              "meaning": "準備",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "事前安排或備妥物品。",
+              "grammarTags": []
+            },
+            {
+              "surface": "で",
+              "reading": "で",
+              "meaning": "因為",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "標示提早集合的原因。",
+              "grammarTags": [
+                "原因"
+              ]
+            },
+            {
+              "surface": "早く",
+              "reading": "はやく",
+              "meaning": "早早地",
+              "partOfSpeech": "副詞",
+              "beginnerNote": "「早い」的副詞形。",
+              "grammarTags": [
+                "形容詞副詞化"
+              ]
+            },
+            {
+              "surface": "集まる",
+              "reading": "あつまる",
+              "meaning": "集合",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "人們聚集到同一地點。",
+              "grammarTags": [
+                "辭書形"
+              ]
+            },
+            {
+              "surface": "こと",
+              "reading": "こと",
+              "meaning": "事情",
+              "partOfSpeech": "形式名詞",
+              "beginnerNote": "將前面的動作名詞化。",
+              "grammarTags": [
+                "名詞化"
+              ]
+            },
+            {
+              "surface": "に",
+              "reading": "に",
+              "meaning": "成為",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "與「なる」組成決定的表現。",
+              "grammarTags": [
+                "ことになる"
+              ]
+            },
+            {
+              "surface": "なっていた",
+              "reading": "なっていた",
+              "meaning": "已經決定了",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "「ことになっていた」表示先前已作成的安排。",
+              "grammarTags": [
+                "ことになっている",
+                "過去狀態"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sentence-013-b",
+          "number": 13,
+          "original": "今日は早く集まることになっていた。",
+          "translation": null,
+          "tokens": [
+            {
+              "surface": "今日",
+              "reading": "きょう",
+              "meaning": "今天",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "說話當下的這一天。",
+              "grammarTags": [
+                "時間詞"
+              ]
+            },
+            {
+              "surface": "は",
+              "reading": "は",
+              "meaning": "主題標記",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "提示今天這個時間範圍。",
+              "grammarTags": [
+                "主題助詞"
+              ]
+            },
+            {
+              "surface": "早く",
+              "reading": "はやく",
+              "meaning": "提早",
+              "partOfSpeech": "副詞",
+              "beginnerNote": "表示時間比平常早。",
+              "grammarTags": []
+            },
+            {
+              "surface": "集まる",
+              "reading": "あつまる",
+              "meaning": "集合",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "人們聚集到一起。",
+              "grammarTags": [
+                "辭書形"
+              ]
+            },
+            {
+              "surface": "ことになっていた",
+              "reading": "ことになっていた",
+              "meaning": "已經決定了",
+              "partOfSpeech": "文法表現",
+              "beginnerNote": "表示先前已排定的事情。",
+              "grammarTags": [
+                "ことになっている"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sentence-014",
+          "number": 14,
+          "original": "黒板には、昨日書いたままの予定表が残っていた。",
+          "translation": "黑板上還留著昨天寫完後原封不動的行程表。",
+          "tokens": [
+            {
+              "surface": "黒板",
+              "reading": "こくばん",
+              "meaning": "黑板",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "教室裡書寫文字的板面。",
+              "grammarTags": []
+            },
+            {
+              "surface": "に",
+              "reading": "に",
+              "meaning": "在",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "標示預定表存在的場所。",
+              "grammarTags": [
+                "存在場所"
+              ]
+            },
+            {
+              "surface": "は",
+              "reading": "は",
+              "meaning": "主題標記",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "凸顯黑板這個範圍。",
+              "grammarTags": [
+                "主題助詞"
+              ]
+            },
+            {
+              "surface": "昨日",
+              "reading": "きのう",
+              "meaning": "昨天",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "今天的前一天。",
+              "grammarTags": [
+                "時間詞"
+              ]
+            },
+            {
+              "surface": "書いた",
+              "reading": "かいた",
+              "meaning": "寫了",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "「書く」的過去式。",
+              "grammarTags": [
+                "過去形"
+              ]
+            },
+            {
+              "surface": "まま",
+              "reading": "まま",
+              "meaning": "維持原樣",
+              "partOfSpeech": "形式名詞",
+              "beginnerNote": "表示狀態沒有改變。",
+              "grammarTags": [
+                "たまま"
+              ]
+            },
+            {
+              "surface": "の",
+              "reading": "の",
+              "meaning": "的",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "連接前面的狀態與預定表。",
+              "grammarTags": [
+                "格助詞"
+              ]
+            },
+            {
+              "surface": "予定表",
+              "reading": "よていひょう",
+              "meaning": "行程表；預定表",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "列出安排與時間的表格。",
+              "grammarTags": []
+            },
+            {
+              "surface": "が",
+              "reading": "が",
+              "meaning": "主語標記",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "標示仍留著的東西。",
+              "grammarTags": [
+                "主格助詞"
+              ]
+            },
+            {
+              "surface": "残っていた",
+              "reading": "のこっていた",
+              "meaning": "還留著",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "表示某個狀態持續到過去當時。",
+              "grammarTags": [
+                "ていた"
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "id": "task-006-duplicate-number",
+          "ruleId": "number.duplicate",
+          "category": "numbering",
+          "scope": "task",
+          "outcome": "error",
+          "sentenceId": null,
+          "sentenceNumber": 13,
+          "line": null,
+          "title": "句子編號重複",
+          "message": "【13】出現兩次，無法安全判斷哪一個區塊應保留。",
+          "evidence": "實際編號：12、13、13、14",
+          "retryable": true
+        },
+        {
+          "id": "task-006-missing-translation",
+          "ruleId": "content.missing-translation",
+          "category": "completeness",
+          "scope": "sentence",
+          "outcome": "error",
+          "sentenceId": "sentence-013-b",
+          "sentenceNumber": 13,
+          "line": 48,
+          "title": "中文翻譯缺漏",
+          "message": "第二個【13】沒有「中文翻譯」內容。",
+          "evidence": "translation: null",
+          "retryable": true
+        },
+        {
+          "id": "task-006-token-format",
+          "ruleId": "format.token-line",
+          "category": "format",
+          "scope": "task",
+          "outcome": "pass",
+          "sentenceId": null,
+          "sentenceNumber": null,
+          "line": null,
+          "title": "單字拆解格式正確",
+          "message": "所有已輸出的 token 均含假名與中文解釋。",
+          "evidence": null,
+          "retryable": true
+        }
+      ]
+    },
+    {
+      "id": "task-007",
+      "fileNumber": 7,
+      "title": "工作分配",
+      "sentenceRange": {
+        "start": 15,
+        "end": 16
+      },
+      "outputFile": "007_15-16_翻譯.txt",
+      "status": "review",
+      "attempts": 1,
+      "processingTimeMs": 5480,
+      "processedAt": "2026-07-20T14:24:00+08:00",
+      "sentences": [
+        {
+          "id": "sentence-015",
+          "number": 15,
+          "original": "紙を切る係、看板を作る係、買い出しに行く係。",
+          "translation": "負責剪紙的人、負責做看板的人、負責去採買的人。",
+          "tokens": [
+            {
+              "surface": "紙",
+              "reading": "かみ",
+              "meaning": "紙",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "書寫或製作用的薄片材料。",
+              "grammarTags": []
+            },
+            {
+              "surface": "を",
+              "reading": "を",
+              "meaning": "受詞標記",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "標示被剪的物品。",
+              "grammarTags": [
+                "受格助詞"
+              ]
+            },
+            {
+              "surface": "切る",
+              "reading": "きる",
+              "meaning": "剪；切",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "用工具把物品分開。",
+              "grammarTags": [
+                "辭書形"
+              ]
+            },
+            {
+              "surface": "係",
+              "reading": "かかり",
+              "meaning": "負責的人",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "被分派某項職責的人。",
+              "grammarTags": []
+            },
+            {
+              "surface": "看板",
+              "reading": "かんばん",
+              "meaning": "看板；招牌",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "用來標示或宣傳的牌子。",
+              "grammarTags": []
+            },
+            {
+              "surface": "を",
+              "reading": "を",
+              "meaning": "受詞標記",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "標示被製作的東西。",
+              "grammarTags": [
+                "受格助詞"
+              ]
+            },
+            {
+              "surface": "作る",
+              "reading": "つくる",
+              "meaning": "製作",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "把材料做成某個物品。",
+              "grammarTags": [
+                "辭書形"
+              ]
+            },
+            {
+              "surface": "係",
+              "reading": "かかり",
+              "meaning": "負責的人",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "承擔看板製作工作的人。",
+              "grammarTags": []
+            },
+            {
+              "surface": "買い出し",
+              "reading": "かいだし",
+              "meaning": "外出採買",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "為了準備物品而出去購買。",
+              "grammarTags": []
+            },
+            {
+              "surface": "に",
+              "reading": "に",
+              "meaning": "為了",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "標示移動的目的。",
+              "grammarTags": [
+                "目的"
+              ]
+            },
+            {
+              "surface": "行く",
+              "reading": "いく",
+              "meaning": "去",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "移動到其他地方。",
+              "grammarTags": [
+                "辭書形"
+              ]
+            },
+            {
+              "surface": "係",
+              "reading": "かかり",
+              "meaning": "負責的人",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "承擔外出採買工作的人。",
+              "grammarTags": []
+            }
+          ]
+        },
+        {
+          "id": "sentence-016",
+          "number": 16,
+          "original": "どれも大した仕事ではないはずなのに、なぜか少しだけ特別に見えた。",
+          "translation": "明明都不是什麼了不起的工作，不知為何卻顯得稍微特別了一點。",
+          "tokens": [
+            {
+              "surface": "どれも",
+              "reading": "どれも",
+              "meaning": "每一個都",
+              "partOfSpeech": "代名詞",
+              "beginnerNote": "疑問詞加「も」表示全部。",
+              "grammarTags": [
+                "疑問詞＋も"
+              ]
+            },
+            {
+              "surface": "大した",
+              "reading": "たいした",
+              "meaning": "了不起的；重大的",
+              "partOfSpeech": "連體詞",
+              "beginnerNote": "常與否定搭配，表示「沒什麼大不了」。",
+              "grammarTags": [
+                "大した～ない"
+              ]
+            },
+            {
+              "surface": "仕事",
+              "reading": "しごと",
+              "meaning": "工作",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "此處指被分配的任務。",
+              "grammarTags": []
+            },
+            {
+              "surface": "では",
+              "reading": "では",
+              "meaning": "並不是",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "接名詞後形成否定判斷。",
+              "grammarTags": [
+                "ではない"
+              ]
+            },
+            {
+              "surface": "ない",
+              "reading": "ない",
+              "meaning": "不是；沒有",
+              "partOfSpeech": "助動詞",
+              "beginnerNote": "表示否定。",
+              "grammarTags": [
+                "否定"
+              ]
+            },
+            {
+              "surface": "はず",
+              "reading": "はず",
+              "meaning": "理應；照理說",
+              "partOfSpeech": "形式名詞",
+              "beginnerNote": "表示根據情況所作的合理判斷。",
+              "grammarTags": [
+                "はず"
+              ]
+            },
+            {
+              "surface": "なのに",
+              "reading": "なのに",
+              "meaning": "明明……卻……",
+              "partOfSpeech": "接續助詞",
+              "beginnerNote": "表示實際感受與預期相反。",
+              "grammarTags": [
+                "逆接"
+              ]
+            },
+            {
+              "surface": "なぜか",
+              "reading": "なぜか",
+              "meaning": "不知為何",
+              "partOfSpeech": "副詞",
+              "beginnerNote": "說話者不知道原因。",
+              "grammarTags": []
+            },
+            {
+              "surface": "少し",
+              "reading": "すこし",
+              "meaning": "稍微",
+              "partOfSpeech": "副詞",
+              "beginnerNote": "表示程度不高。",
+              "grammarTags": []
+            },
+            {
+              "surface": "だけ",
+              "reading": "だけ",
+              "meaning": "一點點；僅僅",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "限定前面的程度。",
+              "grammarTags": [
+                "限定"
+              ]
+            },
+            {
+              "surface": "特別",
+              "reading": "とくべつ",
+              "meaning": "特別",
+              "partOfSpeech": "な形容詞",
+              "beginnerNote": "與一般情況不同。",
+              "grammarTags": []
+            },
+            {
+              "surface": "に",
+              "reading": "に",
+              "meaning": "地",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "把「特別」變成修飾動詞的形式。",
+              "grammarTags": [
+                "副詞化"
+              ]
+            },
+            {
+              "surface": "見えた",
+              "reading": "みえた",
+              "meaning": "看起來；顯得",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "描述說話者眼中的印象。",
+              "grammarTags": [
+                "過去形"
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "id": "task-007-number-sequence",
+          "ruleId": "number.sequence",
+          "category": "numbering",
+          "scope": "task",
+          "outcome": "pass",
+          "sentenceId": null,
+          "sentenceNumber": null,
+          "line": null,
+          "title": "句子編號完整",
+          "message": "預期與實際編號皆為 15–16。",
+          "evidence": null,
+          "retryable": true
+        },
+        {
+          "id": "task-007-translation-nuance",
+          "ruleId": "review.translation-nuance",
+          "category": "language",
+          "scope": "sentence",
+          "outcome": "review",
+          "sentenceId": "sentence-016",
+          "sentenceNumber": 16,
+          "line": 41,
+          "title": "語氣需要人工複查",
+          "message": "「特別に見えた」可譯為「顯得特別」或「看來格外不同」，需依上下文確認敘事語氣。",
+          "evidence": "なぜか少しだけ特別に見えた",
+          "retryable": false
+        },
+        {
+          "id": "task-007-format-valid",
+          "ruleId": "format.token-line",
+          "category": "format",
+          "scope": "task",
+          "outcome": "pass",
+          "sentenceId": null,
+          "sentenceNumber": null,
+          "line": null,
+          "title": "格式檢核通過",
+          "message": "單字拆解格式與必要欄位均完整。",
+          "evidence": null,
+          "retryable": true
+        }
+      ]
+    },
+    {
+      "id": "task-008",
+      "fileNumber": 8,
+      "title": "清晨的對話",
+      "sentenceRange": {
+        "start": 17,
+        "end": 18
+      },
+      "outputFile": "008_17-18_翻譯.txt",
+      "status": "review",
+      "attempts": 1,
+      "processingTimeMs": 5710,
+      "processedAt": "2026-07-20T14:30:00+08:00",
+      "sentences": [
+        {
+          "id": "sentence-017",
+          "number": 17,
+          "original": "「昨日、帰るの遅かったでしょ。」",
+          "translation": "「昨天回家很晚吧。」",
+          "tokens": [
+            {
+              "surface": "昨日",
+              "reading": "きのう",
+              "meaning": "昨天",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "今天的前一天。",
+              "grammarTags": [
+                "時間詞"
+              ]
+            },
+            {
+              "surface": "帰る",
+              "reading": "かえる",
+              "meaning": "回家；回去",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "返回原本的地方。",
+              "grammarTags": [
+                "辭書形"
+              ]
+            },
+            {
+              "surface": "の",
+              "reading": "の",
+              "meaning": "這件事",
+              "partOfSpeech": "形式名詞",
+              "beginnerNote": "將「回家」這個動作名詞化。",
+              "grammarTags": [
+                "名詞化"
+              ]
+            },
+            {
+              "surface": "遅かった",
+              "reading": "おそかった",
+              "meaning": "很晚；遲了",
+              "partOfSpeech": "い形容詞",
+              "beginnerNote": "「遅い」的過去式。",
+              "grammarTags": [
+                "過去形"
+              ]
+            },
+            {
+              "surface": "でしょ",
+              "reading": "でしょ",
+              "meaning": "吧；對吧",
+              "partOfSpeech": "文法表現",
+              "beginnerNote": "口語中用來向對方確認推測。",
+              "grammarTags": [
+                "確認語氣"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sentence-018",
+          "number": 18,
+          "original": "彼女が聞くと、彼は缶コーヒーのふたを開けながらうなずいた。",
+          "translation": "她一問，他就一邊打開罐裝咖啡的蓋子一邊點頭。",
+          "tokens": [
+            {
+              "surface": "彼女",
+              "reading": "かのじょ",
+              "meaning": "她",
+              "partOfSpeech": "代名詞",
+              "beginnerNote": "指女性的第三人稱。",
+              "grammarTags": []
+            },
+            {
+              "surface": "が",
+              "reading": "が",
+              "meaning": "主語標記",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "標示發問的人。",
+              "grammarTags": [
+                "主格助詞"
+              ]
+            },
+            {
+              "surface": "聞く",
+              "reading": "きく",
+              "meaning": "問；聽",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "此處依上下文解作「詢問」。",
+              "grammarTags": [
+                "多義詞"
+              ]
+            },
+            {
+              "surface": "と",
+              "reading": "と",
+              "meaning": "一……就……",
+              "partOfSpeech": "接續助詞",
+              "beginnerNote": "表示前項發生後緊接著後項。",
+              "grammarTags": [
+                "條件"
+              ]
+            },
+            {
+              "surface": "彼",
+              "reading": "かれ",
+              "meaning": "他",
+              "partOfSpeech": "代名詞",
+              "beginnerNote": "男性的第三人稱。",
+              "grammarTags": []
+            },
+            {
+              "surface": "は",
+              "reading": "は",
+              "meaning": "主題標記",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "提示後半句談論的人。",
+              "grammarTags": [
+                "主題助詞"
+              ]
+            },
+            {
+              "surface": "缶コーヒー",
+              "reading": "かんコーヒー",
+              "meaning": "罐裝咖啡",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "裝在金屬罐裡販售的咖啡。",
+              "grammarTags": []
+            },
+            {
+              "surface": "の",
+              "reading": "の",
+              "meaning": "的",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "表示蓋子屬於咖啡罐。",
+              "grammarTags": [
+                "所有"
+              ]
+            },
+            {
+              "surface": "ふた",
+              "reading": "ふた",
+              "meaning": "蓋子",
+              "partOfSpeech": "名詞",
+              "beginnerNote": "封住容器開口的部件。",
+              "grammarTags": []
+            },
+            {
+              "surface": "を",
+              "reading": "を",
+              "meaning": "受詞標記",
+              "partOfSpeech": "助詞",
+              "beginnerNote": "標示被打開的東西。",
+              "grammarTags": [
+                "受格助詞"
+              ]
+            },
+            {
+              "surface": "開けながら",
+              "reading": "あけながら",
+              "meaning": "一邊打開一邊",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "「～ながら」表示兩個動作同時進行。",
+              "grammarTags": [
+                "ながら"
+              ]
+            },
+            {
+              "surface": "うなずいた",
+              "reading": "うなずいた",
+              "meaning": "點了點頭",
+              "partOfSpeech": "動詞",
+              "beginnerNote": "以點頭表示同意或回答。",
+              "grammarTags": [
+                "過去形"
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "id": "task-008-number-sequence",
+          "ruleId": "number.sequence",
+          "category": "numbering",
+          "scope": "task",
+          "outcome": "pass",
+          "sentenceId": null,
+          "sentenceNumber": null,
+          "line": null,
+          "title": "句子編號完整",
+          "message": "預期與實際編號皆為 17–18。",
+          "evidence": null,
+          "retryable": true
+        },
+        {
+          "id": "task-008-colloquial-review",
+          "ruleId": "review.colloquial-ellipsis",
+          "category": "language",
+          "scope": "sentence",
+          "outcome": "review",
+          "sentenceId": "sentence-017",
+          "sentenceNumber": 17,
+          "line": 4,
+          "title": "口語省略需人工確認",
+          "message": "「帰るの遅かった」省略助詞「が」，需確認拆解是否要保留口語結構或補充文法提示。",
+          "evidence": "帰るの遅かったでしょ",
+          "retryable": false
+        },
+        {
+          "id": "task-008-verb-meaning-review",
+          "ruleId": "review.contextual-meaning",
+          "category": "language",
+          "scope": "sentence",
+          "outcome": "review",
+          "sentenceId": "sentence-018",
+          "sentenceNumber": 18,
+          "line": 29,
+          "title": "多義詞翻譯需人工確認",
+          "message": "「聞く」可表示「聽」或「問」，目前依對話脈絡選擇「問」。",
+          "evidence": "彼女が聞くと",
+          "retryable": false
+        },
+        {
+          "id": "task-008-format-valid",
+          "ruleId": "format.token-line",
+          "category": "format",
+          "scope": "task",
+          "outcome": "pass",
+          "sentenceId": null,
+          "sentenceNumber": null,
+          "line": null,
+          "title": "格式檢核通過",
+          "message": "原句、拆解與翻譯欄位均可正常解析。",
+          "evidence": null,
+          "retryable": true
+        }
+      ]
+    }
+  ]
+}
