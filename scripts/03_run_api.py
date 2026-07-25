@@ -36,8 +36,6 @@ ALIGN_TARGET_COL = 16
 # API 最大重試次數
 MAX_RETRIES = 3
 
-client = OpenAI()
-
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
@@ -59,8 +57,7 @@ SYSTEM_PROMPT = """
 單詞 （假名 / 中文）
 
 
-中文翻譯：
-中文翻譯內容
+中文翻譯： 中文翻譯內容
 
 
 絕對規則：
@@ -68,7 +65,7 @@ SYSTEM_PROMPT = """
 1. 每個【編號】後面必須完整保留日文原句。
 2. 不可以省略任何【編號】。
 3. 不可以省略任何日文原句。
-4. 每一句都必須有「中文翻譯：」。
+4. 每一句都必須以「中文翻譯： 中文翻譯內容」放在同一行。
 5. 每一句都必須有逐字拆解。
 6. 每個詞語獨立一行。
 7. 每個詞語之間空一行。
@@ -157,7 +154,12 @@ def parse_number_range(number_range: str):
 # API 呼叫
 # =========================
 
-def translate_block(file_no: int, number_range: str, content: str, retry_index: int = 1) -> str:
+def build_translation_input(
+    file_no: int,
+    number_range: str,
+    content: str,
+    retry_index: int = 1,
+) -> list[dict[str, str]]:
     file_label = f"{file_no:03d}"
 
     user_prompt = f"""檔案編號：{file_label}
@@ -171,28 +173,66 @@ def translate_block(file_no: int, number_range: str, content: str, retry_index: 
 2. 不可以漏掉任何編號。
 3. 每個【編號】後面都必須先輸出原本的日文原句。
 4. 每一句都必須有逐字拆解。
-5. 每一句都必須有「中文翻譯：」。
+5. 每一句都必須以「中文翻譯： 中文翻譯內容」放在同一行。
 6. 逐字拆解區每一行都必須是「單詞 （假名 / 中文）」。
 7. 不可以把原句整句複製到逐字拆解區。
 8. 中文解釋不要混入 Hindi、韓文、阿拉伯文、泰文、西里爾字母、喬治亞字母等外語文字。
 9. 不要拆解標點符號，不要把「、」「。」「？」「！」「」」「――」當成單詞拆出來。
 10. 如果某個【編號】的原句本身只有標點，例如「!」「?」「?!」「「？」」，可以只保留原句與中文翻譯，不必硬拆。
 11. 短反應句也必須拆解，例如「はあ」「え」「うん」「……」。
+12. 如果原句只是章節數字，例如「001」或「００１」，請保留原句與中文翻譯，但不要產生逐字拆解。
 
 以下是要處理的內容：
 
 {content}
 """
 
+    return [
+        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "user", "content": user_prompt},
+    ]
+
+
+def translate_block(
+    file_no: int,
+    number_range: str,
+    content: str,
+    retry_index: int = 1,
+    api_client: OpenAI | None = None,
+) -> str:
+    client = api_client or OpenAI()
+
     response = client.responses.create(
         model=MODEL,
-        input=[
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": user_prompt},
-        ],
+        input=build_translation_input(
+            file_no=file_no,
+            number_range=number_range,
+            content=content,
+            retry_index=retry_index,
+        ),
     )
 
     return response.output_text
+
+
+def translate_block_stream(
+    file_no: int,
+    number_range: str,
+    content: str,
+    retry_index: int = 1,
+    api_client: OpenAI | None = None,
+):
+    client = api_client or OpenAI()
+    return client.responses.create(
+        model=MODEL,
+        input=build_translation_input(
+            file_no=file_no,
+            number_range=number_range,
+            content=content,
+            retry_index=retry_index,
+        ),
+        stream=True,
+    )
 
 
 # =========================
@@ -233,6 +273,18 @@ def is_word_line(line: str) -> bool:
         return True
 
     return False
+
+
+TRANSLATION_LABEL = "中文翻譯："
+
+
+def get_inline_translation(line: str) -> str | None:
+    stripped = line.strip()
+
+    if not stripped.startswith(TRANSLATION_LABEL):
+        return None
+
+    return stripped[len(TRANSLATION_LABEL):].strip()
 
 
 def align_word_lines(text: str, target_col: int = 16) -> str:
@@ -283,6 +335,13 @@ def is_punctuation_only_sentence(text: str) -> bool:
     )
 
     return all(ch in allowed_chars for ch in s)
+
+
+def is_numeric_section_marker(text: str) -> bool:
+    if text is None:
+        return False
+
+    return re.fullmatch(r"[0-9０-９]{1,6}", text.strip()) is not None
 
 
 # =========================
@@ -356,7 +415,9 @@ def add_missing_short_interjection_breakdown(text: str) -> str:
         if original:
             clean_original = clean_original_for_short_interjection(original)
 
-            has_translation_marker = any(b.strip() == "中文翻譯：" for b in block_lines)
+            has_translation_marker = any(
+                get_inline_translation(b) is not None for b in block_lines
+            )
             has_word_line = any(is_word_line(b.strip()) for b in block_lines)
 
             if clean_original in SHORT_INTERJECTION_MAP and has_translation_marker and not has_word_line:
@@ -366,7 +427,7 @@ def add_missing_short_interjection_breakdown(text: str) -> str:
                 inserted = False
 
                 for bline in block_lines:
-                    if bline.strip() == "中文翻譯：" and not inserted:
+                    if get_inline_translation(bline) is not None and not inserted:
                         while new_block and new_block[-1].strip() == "":
                             new_block.pop()
 
@@ -374,7 +435,7 @@ def add_missing_short_interjection_breakdown(text: str) -> str:
                         new_block.append(insert_line)
                         new_block.append("")
                         new_block.append("")
-                        new_block.append("中文翻譯：")
+                        new_block.append(bline.rstrip())
                         inserted = True
                     else:
                         new_block.append(bline)
@@ -413,12 +474,47 @@ def remove_standalone_punctuation_lines(text: str) -> str:
             state = "breakdown"
             continue
 
-        if stripped == "中文翻譯：":
+        if get_inline_translation(stripped) is not None:
             new_lines.append(line.rstrip())
             state = "translation"
             continue
 
         if state == "breakdown" and is_punctuation_only_sentence(stripped):
+            continue
+
+        new_lines.append(line.rstrip())
+
+    return "\n".join(new_lines)
+
+
+def remove_numeric_marker_breakdown(text: str) -> str:
+    lines = text.splitlines()
+    new_lines = []
+    state = "outside"
+    numeric_marker = False
+
+    for line in lines:
+        stripped = line.strip()
+
+        if re.fullmatch(r"【\d+】", stripped):
+            state = "after_number"
+            numeric_marker = False
+            new_lines.append(line.rstrip())
+            continue
+
+        if state == "after_number":
+            new_lines.append(line.rstrip())
+            if stripped:
+                numeric_marker = is_numeric_section_marker(stripped)
+                state = "breakdown"
+            continue
+
+        if get_inline_translation(stripped) is not None:
+            state = "translation"
+            new_lines.append(line.rstrip())
+            continue
+
+        if numeric_marker and state == "breakdown" and stripped:
             continue
 
         new_lines.append(line.rstrip())
@@ -508,13 +604,17 @@ def normalize_blank_lines(text: str) -> str:
             i += 1
             continue
 
-        if line.strip() == "中文翻譯：":
+        inline_translation = get_inline_translation(line)
+
+        if inline_translation is not None:
             while new_lines and new_lines[-1] == "":
                 new_lines.pop()
 
             new_lines.append("")
             new_lines.append("")
-            new_lines.append("中文翻譯：")
+            new_lines.append(
+                f"{TRANSLATION_LABEL} {inline_translation}".rstrip()
+            )
             i += 1
             continue
 
@@ -530,6 +630,7 @@ def normalize_blank_lines(text: str) -> str:
 
 def postprocess_result(text: str) -> str:
     text = remove_standalone_punctuation_lines(text)
+    text = remove_numeric_marker_breakdown(text)
     text = remove_punctuation_word_lines(text)
     text = remove_trailing_punctuation_after_word_line(text)
     text = add_missing_short_interjection_breakdown(text)
@@ -644,8 +745,14 @@ def iter_sentence_blocks(result: str):
             current["state"] = "breakdown"
             continue
 
-        if stripped == "中文翻譯：":
+        inline_translation = get_inline_translation(stripped)
+
+        if inline_translation is not None:
             current["state"] = "translation"
+
+            if inline_translation:
+                current["translation_lines"].append((idx, inline_translation))
+
             continue
 
         if current["state"] == "breakdown":
@@ -697,13 +804,19 @@ def validate_result(file_no: int, number_range: str, result: str):
 
         original_is_punctuation_only = is_punctuation_only_sentence(original) if original else False
         original_is_symbol_only = original in {"＊", "◇", "◆"} if original else False
+        original_is_numeric_marker = is_numeric_section_marker(original) if original else False
 
         if not original:
             msg = f"FILE {file_no:03d} | {number_range} | 【{number}】缺少日文原句"
             warnings.append(msg)
             critical_warnings.append(msg)
 
-        if not block["breakdown_lines"] and not original_is_symbol_only and not original_is_punctuation_only:
+        if (
+            not block["breakdown_lines"]
+            and not original_is_symbol_only
+            and not original_is_punctuation_only
+            and not original_is_numeric_marker
+        ):
             msg = f"FILE {file_no:03d} | {number_range} | 【{number}】缺少逐字拆解"
             warnings.append(msg)
             critical_warnings.append(msg)

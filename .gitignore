@@ -1,6 +1,7 @@
 __pycache__/
 *.pyc
 .env
+.venv/
 
 legacy/
 .vscode/
@@ -11,3 +12,8 @@ sample/api_outputs/warnings.txt
 *.epub
 temp_epub_txt/
 epub_extract_*/
+
+# Vue web app
+web/node_modules/
+web/dist/
+.pnpm-store/
