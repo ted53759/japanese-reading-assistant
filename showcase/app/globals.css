@@ -72,3 +72,41 @@ footer > span:last-child { text-align: right; }
   footer { display: flex; align-items: flex-start; }
   footer > span:last-child { text-align: left; }
 }
+
+/* Light mode uses muted paper and sage tones instead of high-contrast white. */
+.app:not(.dark) {
+  background: radial-gradient(circle at 42% 0%, #dde7df 0%, #e8ece4 46%, #dce4dc 100%);
+  color: #18342d;
+}
+.app:not(.dark) .panel {
+  background: rgba(244, 246, 239, .94);
+  border-color: #a8b8ac;
+  box-shadow: 0 12px 30px rgba(45, 69, 56, .09);
+}
+.app:not(.dark) .story-preview { border-color: #b8c5ba; }
+.app:not(.dark) .story-input select,
+.app:not(.dark) .field-row select {
+  background: #edf1ea;
+  border-color: #81968a;
+}
+.app:not(.dark) .source-box,
+.app:not(.dark) .ready-row {
+  background: #e2ebe2;
+  border-color: #8eab98;
+}
+.app:not(.dark) .output { border-color: #9caf9f; }
+.app:not(.dark) .output pre {
+  background: #e7ede6;
+  border-color: #aebcb0;
+  color: #19362d;
+}
+.app:not(.dark) .quality > div {
+  background: #eef2eb;
+  border-color: #a6b6aa;
+}
+.app:not(.dark) .actions button { background: #e7ede5; }
+.app:not(.dark) .panel-heading p,
+.app:not(.dark) .hero > p,
+.app:not(.dark) .source-footer,
+.app:not(.dark) footer { color: #71877a; }
+.app:not(.dark) .theme-switch { background: #d7e1d8; }
