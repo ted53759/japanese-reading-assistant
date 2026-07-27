@@ -88,8 +88,8 @@ const studyData: Record<string, Array<[string, string]>> = {
 function buildFormattedText(story: Story, count: number) {
   return story.sentences.slice(0, count).map((text, index) => {
     const [details, translation] = studyData[story.id][index];
-    return `【${index + 1}】\n${text}\n\n${details}\n\n中文翻譯：${translation}`;
-  }).join("\n\n──────────\n\n");
+    return `${text}\n\n${details.replace(/\n/g, "\n\n")}\n\n中文翻譯：${translation}`;
+  }).join("\n\n\n\n");
 }
 
 function downloadFile(name: string, content: string, type: string) {
