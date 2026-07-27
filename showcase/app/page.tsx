@@ -67,7 +67,7 @@ export default function Home() {
   };
 
   return (
-    <main className={theme === "dark" ? "app dark" : "app"}>
+    <main className={theme === "dark" ? "app dark" : "app dark slate"}>
       <header className="hero">
         <div className="brand">▣ &nbsp; JAPANESE READING ASSISTANT <span>· STORY-FIRST JAPANESE LEARNING</span></div>
         <h1>從喜歡的故事開始，初學者也能讀日文小說。</h1>
@@ -102,7 +102,7 @@ export default function Home() {
       <footer>
         <span>Japanese Reading Assistant</span>
         <div className="theme-switch" role="group" aria-label="外觀模式">
-          <button onClick={() => setTheme("light")} className={theme === "light" ? "active" : ""}>☀ 淺色</button>
+          <button onClick={() => setTheme("light")} className={theme === "light" ? "active" : ""}>☾ 藍灰</button>
           <button onClick={() => setTheme("dark")} className={theme === "dark" ? "active" : ""}>◐ 深色</button>
         </div>
         <span>Local-first · 你的 Key、你的文字、你的控制權</span>
