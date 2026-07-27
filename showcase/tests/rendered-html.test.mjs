@@ -20,7 +20,8 @@ test("server-renders the Japanese Reading Assistant showcase", async () => {
 
   const html = await response.text();
   assert.match(html, /<title>Japanese Reading Assistant \| 公開展示版<\/title>/i);
-  assert.match(html, /用故事，開始讀懂日文。/);
-  assert.match(html, /Interactive walkthrough/);
+  assert.match(html, /從喜歡的故事開始，初學者也能讀日文小說。/);
+  assert.match(html, /選擇展示文本/);
+  assert.match(html, /羅生門/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|Building your site/i);
 });
