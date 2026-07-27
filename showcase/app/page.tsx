@@ -69,7 +69,7 @@ export default function Home() {
   return (
     <main className={theme === "dark" ? "app dark" : "app dark slate"}>
       <header className="hero">
-        <div className="brand">▣ &nbsp; JAPANESE READING ASSISTANT <span>· STORY-FIRST JAPANESE LEARNING</span></div>
+        <div className="brand">▣ &nbsp; JAPANESE READING ASSISTANT</div>
         <h1>從喜歡的故事開始，初學者也能讀日文小說。</h1>
         <p>選擇公開文本，就能看到逐字拆解、假名與繁中翻譯的處理成果。</p>
         <div className="demo-note">◉ 展示模式 · 原始 pipeline 預先處理 · 不需 API Key</div>

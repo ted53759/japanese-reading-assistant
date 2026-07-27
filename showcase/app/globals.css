@@ -45,8 +45,8 @@
 /* On desktop, use the unused space beside the headline for a taller reading area. */
 @media (min-width: 1100px) {
   .result-panel {
-    height: calc(100% + 45px);
-    transform: translateY(-45px);
+    height: calc(100% + 174px);
+    transform: translateY(-174px);
   }
 }
 
