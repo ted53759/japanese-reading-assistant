@@ -70,10 +70,6 @@ export default function Home() {
     <main className={theme === "dark" ? "app dark" : "app"}>
       <header className="hero">
         <div className="brand">▣ &nbsp; JAPANESE READING ASSISTANT <span>· STORY-FIRST JAPANESE LEARNING</span></div>
-        <div className="theme-switch" role="group" aria-label="外觀模式">
-          <button onClick={() => setTheme("light")} className={theme === "light" ? "active" : ""}>☀ 淺色</button>
-          <button onClick={() => setTheme("dark")} className={theme === "dark" ? "active" : ""}>◐ 深色</button>
-        </div>
         <h1>從喜歡的故事開始，初學者也能讀日文小說。</h1>
         <p>選擇公開文本，就能看到逐字拆解、假名與繁中翻譯的處理成果。</p>
         <div className="demo-note">◉ 展示模式 · 原始 pipeline 預先處理 · 不需 API Key</div>
@@ -103,7 +99,14 @@ export default function Home() {
           <aside className="source-footer">資料來源：<a href={story.source} target="_blank" rel="noreferrer">{story.sourceLabel}</a>。此頁僅使用公開展示所需的原文節錄。</aside>
         </section>
       </section>
-      <footer><span>Japanese Reading Assistant</span><span>Local-first · 你的 Key、你的文字、你的控制權</span></footer>
+      <footer>
+        <span>Japanese Reading Assistant</span>
+        <div className="theme-switch" role="group" aria-label="外觀模式">
+          <button onClick={() => setTheme("light")} className={theme === "light" ? "active" : ""}>☀ 淺色</button>
+          <button onClick={() => setTheme("dark")} className={theme === "dark" ? "active" : ""}>◐ 深色</button>
+        </div>
+        <span>Local-first · 你的 Key、你的文字、你的控制權</span>
+      </footer>
     </main>
   );
 }
