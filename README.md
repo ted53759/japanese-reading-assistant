@@ -5,7 +5,7 @@ Japanese Reading Assistant 是一個以「用小說學日文」為核心的長�
 
 ## 線上展示
 
-可直接開啟的互動展示版：[Japanese Reading Assistant Showcase](https://japanese-reading-showcase.tedchou2003.chatgpt.site)  
+可直接開啟的互動展示版：[Japanese Reading Assistant Showcase](https://japanese-reading-showcase.tedchou2003.chatgpt.site)
 展示版使用自製範例資料，呈現閱讀模式、模擬處理進度與品質檢核流程；不需要 API Key，也不會上傳檔案。
 
 ## 教材閱讀方式
