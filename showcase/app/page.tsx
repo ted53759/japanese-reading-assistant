@@ -96,12 +96,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="panel demo-panel">
-          <div className="panel-heading"><b>03</b><div><h2>展示結果已準備完成</h2><p>以原始 Python pipeline 預先處理公開文本，不呼叫訪客的 API。</p></div></div>
-          <div className="ready-row"><span>✓</span><div><strong>可直接閱讀這段故事</strong><small>不會上傳檔案、呼叫 API 或儲存資料</small></div></div>
-          <div className="demo-metadata">{story.title} · {count} 句 · {generatedData.generatedWith.model}</div>
-        </section>
-
         <section className="panel result-panel">
           <div className="result-top"><div><div className="complete">✓ PROCESSING COMPLETE</div><h2>處理結果</h2><p>{story.title} · {count} 句 · {story.elapsedSeconds} 秒</p></div><div className="actions"><button onClick={() => downloadFile(`${story.id}-${count}-analysis.json`, JSON.stringify(result, null, 2), "application/json;charset=utf-8")}>⇩ JSON</button><button onClick={() => downloadFile(`${story.id}-${count}-analysis.txt`, `\uFEFF${formattedText}\n`, "text/plain;charset=utf-8")}>⇩ TXT</button></div></div>
           <div className="quality"><div><span>✓</span><strong>通過</strong><b>{quality.passed}</b></div><div><span>△</span><strong>一般警告</strong><b>{quality.warnings.length}</b></div><div><span>!</span><strong>嚴重問題</strong><b>{quality.critical.length}</b></div><p>✓ 編號、原句、逐字拆解、翻譯與格式檢核皆通過。</p></div>
