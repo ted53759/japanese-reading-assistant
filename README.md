@@ -3,6 +3,11 @@
 Japanese Reading Assistant 是一個以「用小說學日文」為核心的長文本閱讀輔助工具。  
 它將日文小說或文章轉換成逐字拆解格式，減少學習者反覆查單字的成本，讓初級到中級學習者也能透過有趣的原文材料持續學習。
 
+## 線上展示
+
+可直接開啟的互動展示版：[Japanese Reading Assistant Showcase](https://japanese-reading-showcase.tedchou2003.chatgpt.site)  
+展示版使用自製範例資料，呈現閱讀模式、模擬處理進度與品質檢核流程；不需要 API Key，也不會上傳檔案。
+
 ## 教材閱讀方式
 
 初學者可以先閱讀逐字拆解與中文翻譯；進階學習者則可以先挑戰日文原文，再針對不熟悉的詞語查看拆解與翻譯。
